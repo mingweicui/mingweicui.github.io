@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Mingwei Cui — Medical XR Developer</title>
+<meta name="description" content="Mingwei Cui — Independent developer of medical imaging and XR products including VoxelVision and the upcoming EndoVision.">
+<link rel="canonical" href="https://mingweicui.github.io/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="assets/mc-icon-round.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/mc-icon-round-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/mc-icon-round-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/mc-icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mingwei Cui — Medical XR Developer">
+<meta property="og:description" content="Independent developer of medical imaging and XR products including VoxelVision and the upcoming EndoVision.">
+<meta property="og:url" content="https://mingweicui.github.io/">
+<meta property="og:image" content="https://mingweicui.github.io/assets/og-card.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:alt" content="The VoxelVision Oblique Plane Viewer icon.">
+<meta name="twitter:card" content="summary">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/Sora-700-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/HankenGrotesk-400-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/JetBrainsMono-400-latin.woff2">
+<link rel="stylesheet" href="assets/site.css">
+<script>
+/* Detect browsers that force-darken page colours, so gradient-clipped text can
+   fall back to a plain light fill instead of a darkened gradient. */
+(function(){
+  var done=false,t=null;
+  function probe(){
+    if(done||!document.body)return;
+    var e=document.createElement('div');
+    e.style.cssText='position:absolute;width:2px;height:2px;overflow:hidden;pointer-events:none;background-color:#ffffff;';
+    document.body.appendChild(e);
+    var c=getComputedStyle(e).backgroundColor;
+    document.body.removeChild(e);
+    if(c!=='rgb(255, 255, 255)'&&c!=='rgba(255, 255, 255, 1)'){done=true;document.documentElement.classList.add('no-gtx');}
+  }
+  function schedule(){clearTimeout(t);t=setTimeout(probe,120);}
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',probe);}else{probe();}
+  setTimeout(probe,600);setTimeout(probe,2500);
+  new MutationObserver(schedule).observe(document.head,{childList:true,subtree:true});
+})();
+</script>
+<script defer src="assets/site.js"></script>
+</head>
+<body>
+
+<div style="background:#05070d; color:#eef1f6; font-family:'Hanken Grotesk',sans-serif; overflow-x:clip; -webkit-font-smoothing:antialiased;">
+
+  <a class="vvskip" href="#main">Skip to main content</a>
+
+  <!-- ================= NAV ================= -->
+  <nav class="vvnav vvnav-sub" aria-label="Primary">
+    <span class="vvnav-frost" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <a href="index.html" style="display:flex; align-items:center; gap:12px; color:#eef1f6;">
+      <img width="512" height="512" src="assets/mc-icon.svg" alt="" style="width:30px; height:30px; display:block;">
+      <span style="font-family:'Sora',sans-serif; font-weight:700; font-size:18px; letter-spacing:-.01em;">Mingwei Cui</span>
+    </a>
+    <div class="vvlinks" style="display:flex; align-items:center; gap:30px; font-size:14.5px;">
+      <details class="vvmenu">
+        <summary>Menu</summary>
+        <nav class="vvmenu-panel vvglass" aria-label="More sections">
+        <a class="vvm-b" href="#products">Products</a>
+        <a class="vvm-b" href="#contact">Contact</a>
+        </nav>
+      </details>
+      <a class="vvnav-b" href="#products">Products</a>
+      <a class="vvnav-b" href="#contact">Contact</a>
+      <a class="vvcta" href="https://voxelvision.app/" style="color:#fff; background:linear-gradient(100deg,#2979FF,#1A237E); padding:9px 18px; border-radius:999px; font-weight:600; font-size:14px; box-shadow:0 8px 24px -8px rgba(41,121,255,.7);" aria-label="Visit VoxelVision"><img class="vvcta-ico" width="240" height="240" src="assets/icon-voxelvision.webp" alt="" style="width:22px; height:22px; border-radius:6px;"><span class="vvcta-txt">VoxelVision</span></a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ================= HERO ================= -->
+  <header class="vvherowrap" style="position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(70% 90% at 78% -10%, rgba(41,121,255,.24) 0%, transparent 55%), radial-gradient(60% 90% at 12% 100%, rgba(26,35,126,.4) 0%, transparent 60%);"></div>
+    <div style="position:absolute; inset:0; background-image:radial-gradient(rgba(120,170,255,.14) 1px, transparent 1.5px); background-size:34px 34px; opacity:.45; mask-image:linear-gradient(180deg,#000 20%,transparent 85%); animation:vvdrift 40s linear infinite;"></div>
+    <div class="vvhero" style="position:relative; max-width:var(--vv-max); margin:0 auto; padding:120px var(--vv-gut) 96px;">
+      <div style="max-width:820px; animation:vvrise .8s ease both;">
+        <div class="vvchip" style="display:inline-flex; align-items:center; gap:9px; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:#9dc2ff; border:1px solid rgba(157,194,255,.28); border-radius:999px; padding:7px 15px; margin-bottom:30px;">
+          <span style="width:6px; height:6px; border-radius:50%; background:#4DA3FF; box-shadow:0 0 10px #4DA3FF; animation:vvpulse 2.4s ease-in-out infinite;"></span>Medical XR Developer
+        </div>
+        <h1 class="gtx" style="font-family:'Sora',sans-serif; font-size:clamp(40px,7vw,62px); line-height:1.0; letter-spacing:-.03em; font-weight:700; margin:0 0 24px; color:#ffffff; background:linear-gradient(178deg,#ffffff 30%,#b9ccf0); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;">Mingwei Cui</h1>
+        <p style="font-family:'JetBrains Mono',monospace; font-size:13.5px; letter-spacing:.04em; color:#8ba0bd; margin:0 0 30px;">Biomedical Engineering Doctorate, Tsinghua University · Independent Developer</p>
+        <p style="font-size:22px; line-height:1.55; color:#c2cee0; max-width:660px; margin:0; font-weight:300;">Building native medical imaging and extended-reality tools for the Apple platform — bringing volumetric medical data into spatial computing, <span style="color:#9fb0c8;">where the dimensionality of the data matches the dimensionality of the interaction.</span></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= PRODUCTS ================= -->
+  <section id="products" style="max-width:var(--vv-max); margin:0 auto; padding:var(--vv-sec) var(--vv-gut) 0;">
+    <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:#4DA3FF; margin-bottom:16px;">Products</div>
+    <h2 style="font-family:'Sora',sans-serif; font-size:clamp(30px,6vw,44px); line-height:1.05; letter-spacing:-.03em; font-weight:700; margin:0 0 40px; color:#f2f5fa;">Spatial tools for medical imaging.</h2>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(380px,1fr)); gap:20px;">
+
+      <!-- VoxelVision -->
+      <div style="display:flex; flex-direction:column; padding:var(--card-pad); border:1px solid rgba(255,255,255,.08); border-radius:var(--r-card); background:linear-gradient(180deg,rgba(41,121,255,.07),rgba(255,255,255,.01));">
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:22px; min-width:0;">
+          <img width="240" height="240" src="assets/icon-voxelvision.webp" alt="VoxelVision" style="width:60px; height:60px; border-radius:15px; display:block; border:1px solid rgba(255,255,255,.1);">
+          <div style="min-width:0;">
+            <div style="display:flex; align-items:center; flex-wrap:wrap; gap:8px 10px; min-width:0;">
+              <h3 style="font-family:'Sora',sans-serif; font-size:26px; font-weight:700; letter-spacing:-.02em; margin:0; color:#f2f5fa;">VoxelVision</h3>
+              <span style="font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:#0a0e12; background:#4DA3FF; padding:3px 9px; border-radius:999px; font-weight:600; white-space:nowrap;">Available</span>
+            </div>
+            <p style="font-size:13.5px; color:#8ba0bd; margin:6px 0 0;">Apple Vision Pro · iPad · iPhone</p>
+          </div>
+        </div>
+        <p style="font-size:16.5px; line-height:1.6; color:#a9b8cc; margin:0 0 26px;">AR medical imaging for Apple Vision Pro, iPad, and iPhone. Import CT, MR, PET, and NM data — plus NIfTI and NRRD volumes — and explore them in 3D space.</p>
+        <a href="https://voxelvision.app/" style="margin-top:auto; display:inline-flex; align-items:center; gap:8px; align-self:flex-start; color:#fff; background:linear-gradient(100deg,#2979FF,#1A237E); padding:11px 20px; border-radius:999px; font-weight:600; font-size:15px; box-shadow:0 8px 24px -10px rgba(41,121,255,.8);">Visit VoxelVision →</a>
+      </div>
+
+      <!-- EndoVision -->
+      <div style="display:flex; flex-direction:column; padding:var(--card-pad); border:1px solid rgba(255,255,255,.08); border-radius:var(--r-card); background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0));">
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:22px; min-width:0;">
+          <img width="240" height="240" src="assets/icon-endovision.webp" alt="EndoVision" style="width:60px; height:60px; border-radius:15px; display:block; border:1px solid rgba(255,255,255,.1); opacity:.85;">
+          <div style="min-width:0;">
+            <div style="display:flex; align-items:center; flex-wrap:wrap; gap:8px 10px; min-width:0;">
+              <h3 style="font-family:'Sora',sans-serif; font-size:26px; font-weight:700; letter-spacing:-.02em; margin:0; color:#f2f5fa;">EndoVision</h3>
+              <span style="font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:#9fb0c8; border:1px solid rgba(255,255,255,.18); padding:3px 9px; border-radius:999px; font-weight:500; white-space:nowrap;">Coming Soon</span>
+            </div>
+            <p style="font-size:13.5px; color:#8ba0bd; margin:6px 0 0;">On the VoxelVision foundation</p>
+          </div>
+        </div>
+        <p style="font-size:16.5px; line-height:1.6; color:#a9b8cc; margin:0 0 26px;">AR-guided assistance for endoscopic intervention — built on VoxelVision's spatial imaging core, extended to the visualization and interaction of 3D reconstructions.</p>
+        <span style="margin-top:auto; align-self:flex-start; font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:.04em; color:#6f8299;">In development</span>
+      </div>
+
+      <!-- LightPad -->
+      <div style="display:flex; flex-direction:column; padding:var(--card-pad); border:1px solid rgba(255,255,255,.08); border-radius:var(--r-card); background:linear-gradient(180deg,rgba(255,132,0,.07),rgba(255,255,255,.01));">
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:22px; min-width:0;">
+          <img width="480" height="480" src="assets/icon-lightpad.webp" alt="LightPad" style="width:60px; height:60px; display:block;">
+          <div style="min-width:0;">
+            <div style="display:flex; align-items:center; flex-wrap:wrap; gap:8px 10px; min-width:0;">
+              <h3 style="font-family:'Sora',sans-serif; font-size:26px; font-weight:700; letter-spacing:-.02em; margin:0; color:#f2f5fa;">LightPad</h3>
+              <span style="font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:#0a0703; background:#FFA757; padding:3px 9px; border-radius:999px; font-weight:600; white-space:nowrap;">Free</span>
+            </div>
+            <p style="font-size:13.5px; color:#8ba0bd; margin:6px 0 0;">iPad · iPhone</p>
+          </div>
+        </div>
+        <p style="font-size:16.5px; line-height:1.6; color:#a9b8cc; margin:0 0 26px;">A tracing light box for iPad and iPhone — true-size grids, warm-to-cool light, and a touch lock. Free, offline, no ads.</p>
+        <a href="lightpad/" style="margin-top:auto; display:inline-flex; align-items:center; gap:8px; align-self:flex-start; color:#0a0703; background:linear-gradient(100deg,#FFA757,#FF8400); padding:11px 20px; border-radius:999px; font-weight:700; font-size:15px; box-shadow:0 8px 24px -10px rgba(255,132,0,.7);">Visit LightPad →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" style="max-width:var(--vv-max); margin:0 auto; padding:var(--vv-sec) var(--vv-gut) 0;">
+    <div style="position:relative; overflow:hidden; border-radius:var(--r-panel); border:1px solid rgba(41,121,255,.22); padding:56px var(--panel-pad); background:radial-gradient(90% 140% at 100% 0%, rgba(41,121,255,.14), transparent 60%), #080b14;">
+      <div style="position:absolute; inset:0; background-image:radial-gradient(rgba(120,170,255,.1) 1px, transparent 1.5px); background-size:30px 30px; opacity:.4; mask-image:linear-gradient(180deg,#000,transparent);"></div>
+      <div style="position:relative; max-width:640px;">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:#4DA3FF; margin-bottom:18px;">Contact</div>
+        <h2 style="font-family:'Sora',sans-serif; font-size:clamp(28px,5.5vw,40px); line-height:1.08; letter-spacing:-.03em; font-weight:700; margin:0 0 18px; color:#f2f5fa;">Let's build something spatial.</h2>
+        <p style="font-size:18px; line-height:1.55; color:#a9b8cc; margin:0 0 32px; font-weight:300;">For partnership inquiries, collaboration, or general questions.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:12px;">
+          <a href="mailto:mnwcui@gmail.com" style="display:inline-flex; align-items:center; gap:8px; color:#fff; background:linear-gradient(100deg,#2979FF,#1A237E); padding:12px 22px; border-radius:999px; font-weight:600; font-size:15px; box-shadow:0 8px 24px -10px rgba(41,121,255,.8);">mnwcui@gmail.com</a>
+          <a href="https://www.linkedin.com/in/mwcui/" style="display:inline-flex; align-items:center; gap:8px; color:#dbe6f7; border:1px solid rgba(255,255,255,.16); padding:12px 22px; border-radius:999px; font-weight:600; font-size:15px;">LinkedIn</a>
+          <a href="https://github.com/mingweicui" style="display:inline-flex; align-items:center; gap:8px; color:#dbe6f7; border:1px solid rgba(255,255,255,.16); padding:12px 22px; border-radius:999px; font-weight:600; font-size:15px;">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="vvfoot" style="border-top:1px solid var(--vv-rule); padding-block:44px; background:#04060b;">
+    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+      <a href="index.html" style="display:flex; align-items:center; gap:12px; color:#eef1f6;">
+        <img width="512" height="512" src="assets/mc-icon.svg" alt="" style="width:26px; height:26px; display:block;">
+        <span style="font-family:'Sora',sans-serif; font-weight:600; font-size:15px;">Mingwei Cui</span>
+      </a>
+      <div style="display:flex; gap:26px; font-size:14px; color:#8ba0bd; flex-wrap:wrap;">
+        <a href="https://voxelvision.app/" style="color:#8ba0bd;">VoxelVision</a>
+        <a href="lightpad/" style="color:#8ba0bd;">LightPad</a>
+        <a href="https://www.linkedin.com/in/mwcui/" style="color:#8ba0bd;">LinkedIn</a>
+        <a href="https://github.com/mingweicui" style="color:#8ba0bd;">GitHub</a>
+      </div>
+      <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#5f6f85;">© 2026 <a href="https://www.linkedin.com/in/mwcui/" style="color:#7f8aa0;">Mingwei Cui</a></span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

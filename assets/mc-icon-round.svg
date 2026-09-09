@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 9.03 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<g clip-path="url(#mcShape)">
+<g id="Background">
+	<g id="Background_00000169533476821697878430000011756581383243310762_">
+		
+			<linearGradient id="_背景_00000075164767148511934050000011449695027386403221_" gradientUnits="userSpaceOnUse" x1="512" y1="-108" x2="512" y2="-1132" gradientTransform="matrix(1 0 0 -1 0 -108)">
+			<stop  offset="0" style="stop-color:#4A4A4A"/>
+			<stop  offset="1" style="stop-color:#141414"/>
+		</linearGradient>
+		
+			<rect id="_背景_00000017475816018221406120000003068808415461040543_" x="0.0000003" style="fill:url(#_背景_00000075164767148511934050000011449695027386403221_);" width="1024" height="1024"/>
+	</g>
+</g>
+<g id="_x31___x2013__Layer">
+	<g id="_x31___x2013__Layer_00000085223634027079436250000016885034542686417536_">
+		<g id="_体素盒远端三棱_00000176744030321422299280000001067454799508272283_">
+			
+				<line style="fill:none;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;" x1="895.4837646" y1="732.8945312" x2="511.5975037" y2="510.0773315"/>
+			
+				<line style="fill:none;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;" x1="128.2737122" y1="732.8832397" x2="511.5975037" y2="510.0773315"/>
+			
+				<line style="fill:none;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;" x1="511.8787231" y1="68.4703445" x2="511.5975037" y2="510.0773315"/>
+		</g>
+	</g>
+</g>
+<g id="_x32___x2013__Layer">
+	<g id="_x32___x2013__Layer_00000027589269675729917700000017034339632037078154_">
+		
+			<polygon id="_体素盒外缘六棱_00000154413053339307141040000001512916066938168962_" style="fill:none;stroke:#FFFFFF;stroke-width:9;stroke-miterlimit:10;" points="
+			512.1212769,69.6382751 128.5162354,291.1054688 128.5162354,734.0511475 512.1212769,955.5296631 895.7262573,734.0623779 
+			895.7262573,291.1167603 		"/>
+	</g>
+</g>
+<g id="_x33___x2013__Layer">
+	<g id="_x33___x2013__Layer_00000052793918342490771420000015558375576561919108_">
+		<g id="_斜切面影像_00000093174564835354098830000004300285805107554227_">
+			<g>
+				<g>
+					<defs>
+						<polygon id="SVGID_1_" points="703.6425171,180.8612213 320.5999756,180.8612213 129.0899658,512.5839233 
+							320.5999756,844.3067017 703.6425171,844.3067017 895.1525269,512.5839233 						"/>
+					  <clipPath id="mcShape"><circle cx="512" cy="512" r="512"/></clipPath>
+	</defs>
+					<clipPath id="SVGID_00000128453555395128406330000005732189948921739911_">
+						<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+					</clipPath>
+					<g style="clip-path:url(#SVGID_00000128453555395128406330000005732189948921739911_);">
+						
+							<rect x="-102.4823685" y="-102.0196838" style="stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;" width="1229.2072754" height="1229.2073975"/>
+						
+							<ellipse style="fill:#B8B8B8;" cx="512.1212769" cy="512.5839233" rx="185.6153412" ry="182.6121674"/>
+						
+							<ellipse style="fill:#7C7C7C;" cx="512.1212769" cy="512.5839233" rx="169.5061646" ry="166.9545288"/>
+					</g>
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;fill:none;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="_x34___x2013__Layer">
+	<g id="_x34___x2013__Layer_00000074427536421314166380000004913020257787846335_">
+		<g id="_体素盒近端三棱_00000119075707343353104000000013351236166785407924_">
+			
+				<line style="fill:none;stroke:#FFFFFF;stroke-width:12;stroke-miterlimit:10;" x1="128.5162354" y1="289.2682495" x2="512.4024658" y2="512.0853882"/>
+			
+				<line style="fill:none;stroke:#FFFFFF;stroke-width:12;stroke-miterlimit:10;" x1="895.7262573" y1="289.27948" x2="512.4024658" y2="512.0853882"/>
+			
+				<line style="fill:none;stroke:#FFFFFF;stroke-width:12;stroke-miterlimit:10;" x1="512.1212769" y1="953.6923218" x2="512.4024658" y2="512.0853882"/>
+		</g>
+	</g>
+</g>
+
+
+</g>
+</svg>
